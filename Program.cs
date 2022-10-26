@@ -23,6 +23,29 @@
                     addressBookFive.AddContact();
                     addressBookFive.Display();
                     break;
+                case 6:
+                    MultipleAddressBooks multipleAddressBooks = new MultipleAddressBooks();
+                    //adding first address book
+                    multipleAddressBooks.AddAddressBook();
+                    //adding multiple contacts in first address book
+                    multipleAddressBooks.AddContact();
+                    multipleAddressBooks.Display();
+                    multipleAddressBooks.AddContact();
+                    multipleAddressBooks.Display();
+                    //adding second address book
+                    multipleAddressBooks.addAddressBook();
+                    //adding multiple contacts in second address book
+                    multipleAddressBooks.AddContact();
+                    multipleAddressBooks.Display();
+                    multipleAddressBooks.AddContact();
+                    multipleAddressBooks.Display();
+                    //editing a contact using name of address book and contact's name
+                    multipleAddressBooks.EditContact();
+                    multipleAddressBooks.Display();
+                    //deleting a contact using name of address book and contact's name
+                    multipleAddressBooks.DeleteContact();
+                    multipleAddressBooks.Display();
+                    break;
                 default:
                     Console.WriteLine("Please enter a valid use case number!");
                     break;
